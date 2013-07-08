@@ -95,7 +95,6 @@ if(require.main == module) {
         .parse(process.argv);
         var checkJson;
         if (program.url){
-            console.log('url:' + program.url);
             checkUrl(program.url, program.checks);
         } else {
             checkJson = checkHtmlFile(program.file, program.checks);
